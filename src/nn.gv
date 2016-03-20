@@ -1,0 +1,144 @@
+digraph G {
+ 
+    rankdir=LR
+
+    splines=line
+
+    nodesep=.05;
+
+    node [label=""];
+
+    subgraph cluster_0 {
+ 
+    color=white;
+
+    node [style=solid,color=blue4];
+
+    
+    node [shape=circle,height=.5];
+
+    a00 ;
+
+    
+    label = "layer input(1)";
+
+    }
+
+    subgraph cluster_1 {
+ 
+    color=white;
+
+    node [style=solid,color=red2];
+
+    
+    node [shape=circle,height=.5];
+
+    a10 ;
+
+    
+    node [shape=point,height=.02];
+
+    a11 a12 a13 ;
+
+    
+    node [shape=circle,height=.5];
+
+    a14 ;
+
+    
+    label = "layer h2(5)";
+
+    }
+
+    subgraph cluster_2 {
+ 
+    color=white;
+
+    node [style=solid,color=red2];
+
+    
+    node [shape=circle,height=.5];
+
+    a20 ;
+
+    
+    node [shape=point,height=.02];
+
+    a21 a22 a23 ;
+
+    
+    node [shape=circle,height=.5];
+
+    a24 ;
+
+    
+    label = "layer h3(5)";
+
+    }
+
+    subgraph cluster_3 {
+ 
+    color=white;
+
+    node [style=solid,color=red2];
+
+    
+    node [shape=circle,height=.5];
+
+    a30 ;
+
+    
+    node [shape=point,height=.02];
+
+    a31 a32 a33 ;
+
+    
+    node [shape=circle,height=.5];
+
+    a34 ;
+
+    
+    label = "layer h4(5)";
+
+    }
+
+    subgraph cluster_4 {
+ 
+    color=white;
+
+    node [style=solid,color=seagreen2];
+
+    
+    node [shape=circle,height=.5];
+
+    a40 a41 ;
+
+    
+    label = "layer out(2)";
+
+    }
+
+    
+
+    a00 -> a10
+a00 -> a14
+a00 -> a20
+a00 -> a24
+a00 -> a30
+a00 -> a34
+a10 -> a40
+a10 -> a41
+a14 -> a40
+a14 -> a41
+a20 -> a40
+a20 -> a41
+a24 -> a40
+a24 -> a41
+a30 -> a40
+a30 -> a41
+a34 -> a40
+a34 -> a41
+
+
+    } 
+    

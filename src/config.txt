@@ -1,0 +1,6 @@
+#[*.gv,*.png]=current dir/nn.gv,current dir/nn.png
+path:,
+#([visual node number]=3,<([layer name]=layer index,[layer nodes number]=3,[nodes color]='red2')>)
+node:(3,('input',1,'blue4'),('h2',5,'red2'),('h3',5,'red2'),('h4',5,'red2'),('h5',2,'seagreen2'))
+#(<[layer1,layer2],...[layeri,layerj]>);connects from layer i to layer j(full connect)
+connect:([0,1],[0,2],[0,3],[1,4],[2,4],[3,4])
