@@ -17,10 +17,10 @@ digraph G {
     
     node [shape=circle,height=.5];
 
-    a00 ;
+    a00 a01 a02 a03 a04 a05 a06 a07 a08 a09 ;
 
     
-    label = "layer input(1)";
+    label = "layer input(10)";
 
     }
 
@@ -33,20 +33,10 @@ digraph G {
     
     node [shape=circle,height=.5];
 
-    a10 ;
+    a10 a11 a12 a13 a14 a15 a16 ;
 
     
-    node [shape=point,height=.02];
-
-    a11 a12 a13 ;
-
-    
-    node [shape=circle,height=.5];
-
-    a14 ;
-
-    
-    label = "layer h2(5)";
+    label = "layer h1(7)";
 
     }
 
@@ -59,20 +49,10 @@ digraph G {
     
     node [shape=circle,height=.5];
 
-    a20 ;
+    a20 a21 a22 a23 a24 ;
 
     
-    node [shape=point,height=.02];
-
-    a21 a22 a23 ;
-
-    
-    node [shape=circle,height=.5];
-
-    a24 ;
-
-    
-    label = "layer h3(5)";
+    label = "layer h2(5)";
 
     }
 
@@ -85,20 +65,10 @@ digraph G {
     
     node [shape=circle,height=.5];
 
-    a30 ;
+    a30 a31 a32 a33 ;
 
     
-    node [shape=point,height=.02];
-
-    a31 a32 a33 ;
-
-    
-    node [shape=circle,height=.5];
-
-    a34 ;
-
-    
-    label = "layer h4(5)";
+    label = "layer h3(4)";
 
     }
 
@@ -121,23 +91,138 @@ digraph G {
     
 
     a00 -> a10
+a00 -> a11
+a00 -> a12
+a00 -> a13
 a00 -> a14
-a00 -> a20
-a00 -> a24
-a00 -> a30
-a00 -> a34
-a10 -> a40
-a10 -> a41
-a14 -> a40
-a14 -> a41
-a20 -> a40
-a20 -> a41
-a24 -> a40
-a24 -> a41
+a00 -> a15
+a00 -> a16
+a01 -> a10
+a01 -> a11
+a01 -> a12
+a01 -> a13
+a01 -> a14
+a01 -> a15
+a01 -> a16
+a02 -> a10
+a02 -> a11
+a02 -> a12
+a02 -> a13
+a02 -> a14
+a02 -> a15
+a02 -> a16
+a03 -> a10
+a03 -> a11
+a03 -> a12
+a03 -> a13
+a03 -> a14
+a03 -> a15
+a03 -> a16
+a04 -> a10
+a04 -> a11
+a04 -> a12
+a04 -> a13
+a04 -> a14
+a04 -> a15
+a04 -> a16
+a05 -> a10
+a05 -> a11
+a05 -> a12
+a05 -> a13
+a05 -> a14
+a05 -> a15
+a05 -> a16
+a06 -> a10
+a06 -> a11
+a06 -> a12
+a06 -> a13
+a06 -> a14
+a06 -> a15
+a06 -> a16
+a07 -> a10
+a07 -> a11
+a07 -> a12
+a07 -> a13
+a07 -> a14
+a07 -> a15
+a07 -> a16
+a08 -> a10
+a08 -> a11
+a08 -> a12
+a08 -> a13
+a08 -> a14
+a08 -> a15
+a08 -> a16
+a09 -> a10
+a09 -> a11
+a09 -> a12
+a09 -> a13
+a09 -> a14
+a09 -> a15
+a09 -> a16
+a10 -> a20
+a10 -> a21
+a10 -> a22
+a10 -> a23
+a10 -> a24
+a11 -> a20
+a11 -> a21
+a11 -> a22
+a11 -> a23
+a11 -> a24
+a12 -> a20
+a12 -> a21
+a12 -> a22
+a12 -> a23
+a12 -> a24
+a13 -> a20
+a13 -> a21
+a13 -> a22
+a13 -> a23
+a13 -> a24
+a14 -> a20
+a14 -> a21
+a14 -> a22
+a14 -> a23
+a14 -> a24
+a15 -> a20
+a15 -> a21
+a15 -> a22
+a15 -> a23
+a15 -> a24
+a16 -> a20
+a16 -> a21
+a16 -> a22
+a16 -> a23
+a16 -> a24
+a20 -> a30
+a20 -> a31
+a20 -> a32
+a20 -> a33
+a21 -> a30
+a21 -> a31
+a21 -> a32
+a21 -> a33
+a22 -> a30
+a22 -> a31
+a22 -> a32
+a22 -> a33
+a23 -> a30
+a23 -> a31
+a23 -> a32
+a23 -> a33
+a24 -> a30
+a24 -> a31
+a24 -> a32
+a24 -> a33
 a30 -> a40
 a30 -> a41
-a34 -> a40
-a34 -> a41
+a31 -> a40
+a31 -> a41
+a32 -> a40
+a32 -> a41
+a33 -> a40
+a33 -> a41
 
 
     } 

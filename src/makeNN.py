@@ -115,13 +115,13 @@ def makeDefConfig():
     args.update({'input':path + 'nn.gv'})
     args.update({'output':path + 'nn.png'})
     #layer number
-    args.update({'visual_num':2})
+    args.update({'visual_num':10})
     #layers config:(name,nodes number,color)
-    args.update({'layers_cfg':(('input',1,'blue4'),('h2',5,'red2'),('h3',5,'red2'),('h4',5,'red2'),('out',2,'seagreen2'))})
+    args.update({'layers_cfg':(('input',10,'blue4'),('h1',7,'red2'),('h2',5,'red2'),('h3',4,'red2'),('out',2,'seagreen2'))})
     layers = args['layers_cfg']
     args.update({'layers_num':len(layers)})
     #connects:layer_i->lay_j
-    args.update({'connects':([0,1],[0,2],[0,3],[1,4],[2,4],[3,4])})
+    args.update({'connects':([0,1],[1,2],[2,3],[3,4])})
     return args
 
 if __name__ == "__main__":
